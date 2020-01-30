@@ -16,7 +16,7 @@ print(5 + 3) # 输出计算结果
 
 ```python
 print("rectangle)
-print("---------------)
+print("---------------")
 print("length   : ", 5)
 print("width    : ", 4)
 print("area     : ", 5 * 4)
@@ -31,7 +31,7 @@ print("perimete : ", (5 + 4) * 2)
 l = 5
 w = 4
 
-print("rectangle)
+print("rectangle")
 print("---------------)
 print("length   : ", l)
 print("width    : ", w)
@@ -72,31 +72,46 @@ perimeter : 12
 
 ```python
 name = input()
-
-name = input("What is your name?")
-
-age = input("How old are you?")
+print("Hi, ", name)
 ```
 
-### 统计程序
+```python
+print("What is your name?")
+name = input()
+print("Hi, ", name)
+```
+
+```python
+name = input("What is your name?")
+print("Hi, ", name)
+```
+
+```python
+name = input("What is your name?")
+print()
+print("Hi, ", name)
+```
+
+```python
+name = input("What is your name?\n")
+print()
+print("Hi, ", name)
+```
+
+### 练习
 
 ```python
 name = input("What is your name?")
 age = input("How old are you?")
-sex = input("Are you a boy or a girl?")
 
 print("Haha, you are ", name, " , you are ", age, " years old, and you are a ", sex)
 ```
 
 改进输出：
 
-
 ```python
 name = input("What is your name?")
 age = input("How old are you?")
-sex = input("Are you a boy or a girl?")
 
-print("Haha, you are {name}, you are {age} years old, and you are a {sex}")
+print("Haha, you are {name}, you are {age} years old")
 ```
-
-练习：修改计算长方形的程序，可以由程序提问长和宽的值。
