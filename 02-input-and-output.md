@@ -113,5 +113,6 @@ print("Haha, you are ", name, " , you are ", age, " years old, and you are a ", 
 name = input("What is your name?")
 age = input("How old are you?")
 
-print("Haha, you are {name}, you are {age} years old")
+# python 3.6
+print(f"Haha, you are {name}, you are {age} years old") # do not forget 'f'
 ```

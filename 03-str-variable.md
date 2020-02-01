@@ -44,3 +44,5 @@ print("width    : ", w)
 print("area     : ", l * w)
 print("perimete : ", (l + w) * 2)
 ```
+
+练习：修改计算正方形面积的程序，使得用户可以手动输入边长
