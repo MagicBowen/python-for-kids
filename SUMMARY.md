@@ -9,6 +9,7 @@
 * [顺序语句](06-Sequential-statement.md)
 * [条件语句](07-condition-statement.md)
 * [循环语句](08-loop-statement.md)
+* [流程图](09-flow-chart.md)
 * [数据结构：List](10-list.md)
 * [数据结构：dict](11-dict.md)
 * [函数](12-function.md)
