@@ -43,6 +43,14 @@ continue：只加奇数或者偶数；
 循环重要的三个东西：条件 -》 做的事情 -》 循环变量
 经典模式：做几遍，边界值，正循环，反循环
 
+## 变量的作用
+
+- 解释一个值：score = 80
+- 接收外部的一个输入：score = int(input("score: "))
+- 存一个计算结果，以后用：area = width * height
+- 累积： i = i + 1
+- 收集： sum = sum + i
+
 ## for 和 range
 
 将之前的程序改写为 for range形式；
