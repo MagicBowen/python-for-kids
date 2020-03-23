@@ -36,5 +36,15 @@ def list_rand(a):
     i = random.randint(0, len(a)-1)
     return a[i]
 
-a = [2, 3 ,1, -1, 9]
-print(a.sort())
+def list_sort(a):
+    for j in range(len(a)-2):
+        for i in range(len(a) - j - 1):
+            if a[i] > a[i+1]:
+                t = a[i]
+                a[i] = a[i+1]
+                a[i+1] = t
+    return a
+
+
+a = [2, 5, 1000, -20, -1000, 22, -500, 0]
+print(list_sort(a))
