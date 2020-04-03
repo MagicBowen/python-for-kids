@@ -8,6 +8,7 @@ list
 越界
 范围 a[1:5]
 函数：append, clear, insert, remove...
+元素是否在list中：in
 字符串也是个list
 
 - 写函数求和list
