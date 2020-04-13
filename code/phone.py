@@ -1,8 +1,8 @@
-phone_numbers = {
-    "wangbo" : "13759947708",
-    "jerry"  : "13588888888",
-    "tianyu" : "13772101699"
-}
+import json
+
+f = open("phone.json", "r+")
+
+phone_numbers = json.load(f)
 
 while True:
     name = input("Who will you search?")
@@ -15,3 +15,10 @@ while True:
         if is_add == "yes":
             number = input("please input the phone number : ")
             phone_numbers[name] = number
+        else:
+            break
+
+f.seek(0, 0)
+f.truncate()        
+json.dump(phone_numbers, f)
+f.close()
