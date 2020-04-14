@@ -1,5 +1,7 @@
 # 数据结构：dict
 
+## 基础
+
 ```python
 a = {1 : "h", 2 : "e", 3 : "o"}
 
@@ -11,9 +13,32 @@ del a[1]
 
 for k, v in a.items():
     print(k, v)
+
+k = 1
+if k in a:
+    print("key 1 in dict")
 ```
 
-元素是否在dict中？ in
+## 复合数据结构
+
+```python
+courses = {
+    "MON" : {"morning" : ["math", "english", "painting"], "afternoon" : ["music", "sports"]},
+    "TUE" : {"morning" : ["physical", "math", "sports"],  "afternoon" : ["english"]}
+}
+
+a = courses["MON"]
+print(type(a))
+
+a = courses["MON"]["morning"]
+print(type(a))
+
+a = courses["MON"]["morning"][1]
+print(type(a))
+
+courses["MON"]["morning"][2] = "physical"
+
+```
 
 practice：
 

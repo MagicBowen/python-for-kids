@@ -1,5 +1,28 @@
 # 库
 
+## 字符串操作
+
+```python
+a = input("input some names:  ")
+
+r = a.find("jerry")
+if r == -1:
+  print("not find")
+else:
+  print("find in index", r)
+
+if "jerry" in a:
+  print("jerry in names")
+
+a = a.replace("jerry", "JERRY")
+print(a)
+
+names = a.split(",")
+for n in names:
+  print(n)
+
+```
+
 ## random
 
 ```python
