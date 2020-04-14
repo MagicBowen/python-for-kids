@@ -122,7 +122,26 @@ engine.stop()
 
 ## 文件库
 
+```python
+f = open("a.txt", "r+")
+print(f.read())
+f.seek(0)
+f.truncate()
+f.write("new content")
+f.close()
+```
+
 ## json库
+
+```python
+import json
+
+f = open("a.json", "r+")
+obj = json.load(f)
+# modify obj
+json.dump(obj, f)
+f.close()
+```
 
 ## 正则表达式库
 
