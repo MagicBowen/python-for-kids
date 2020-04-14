@@ -15,7 +15,7 @@
 * [函数](12-function.md)
 * [库](13-library.md)
 * [CommandLine程序](14-command-line.md)
-* [报表程序](15-charm.md)
+* [报表程序](15-chart.md)
 * [图形程序](16-UI.md)
 * [reference](17-reference.md)
 
