@@ -19,5 +19,6 @@
 * [图形程序](16-UI.md)
 * [练习题](17-practice.md)
 * [笔记](18-notes.md)
+* [上课记录](19-record.md)
 * [reference](reference.md)
 
