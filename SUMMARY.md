@@ -17,5 +17,7 @@
 * [CommandLine程序](14-command-line.md)
 * [报表程序](15-chart.md)
 * [图形程序](16-UI.md)
-* [reference](17-reference.md)
+* [练习题](17-practice.md)
+* [笔记](18-notes.md)
+* [reference](reference.md)
 
