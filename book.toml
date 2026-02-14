@@ -1,0 +1,40 @@
+[book]
+authors = ["王博"]
+language = "zh"
+src = "src"
+title = "Python For Kids"
+description = "A Python Tutorial Book for My Boy Jerry."
+
+# --- 输出配置 ---
+
+[output.html]
+additional-css = ["theme/pdf-report.css"] # 额外的 CSS 文件
+default-theme = "light" # 默认主题
+preferred-dark-theme = "navy" # 默认深色主题
+mathjax-support = true # 支持数学公式
+# 启用搜索功能
+[output.html.search]
+enable = true
+limit-results = 30
+teaser-word-count = 30
+use-boolean-and = true
+boost-title = 2
+boost-hierarchy = 1
+boost-paragraph = 1
+
+# 侧边栏配置
+[output.html.fold]
+enable = true    # 允许折叠章节
+level = 0        # 默认折叠级别
+
+# 打印配置 (生成单页 HTML 用于打印)
+[output.html.print]
+enable = true
+
+# [output.pdf]
+
+# --- 插件配置 (前提是你安装了这些插件) ---
+
+# Mermaid 图表支持
+[preprocessor.mermaid]
+command = "mdbook-mermaid"
