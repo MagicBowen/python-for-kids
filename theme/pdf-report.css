@@ -1,0 +1,141 @@
+/* theme/pdf-report.css */
+
+@media print {
+    /* --- 1. 全局字体与排版 --- */
+    body {
+        /* 正文使用衬线体，更有书卷气和正式感 */
+        font-family: "Georgia", "Noto Serif SC", "Songti SC", "SimSun", serif;
+        font-size: 12pt; /* 适合打印的字号 */
+        line-height: 1.6;
+        color: #222; /* 纯黑太刺眼，使用深灰 */
+        background-color: #fff;
+    }
+
+    /* 标题使用无衬线体，结构清晰 */
+    h1, h2, h3, h4, h5, h6 {
+        font-family: "Helvetica Neue", "Arial", "PingFang SC", "Microsoft YaHei", sans-serif;
+        font-weight: bold;
+        color: #000;
+        margin-top: 1.5em;
+        margin-bottom: 0.8em;
+        page-break-after: avoid; /* 标题后禁止分页，防止标题在页底 */
+    }
+
+    h1 {
+        font-size: 24pt;
+        border-bottom: 2px solid #000; /* 类似正式报告的标题下划线 */
+        padding-bottom: 10px;
+        text-align: center; /* 一级标题居中 */
+    }
+
+    h2 {
+        font-size: 18pt;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 5px;
+    }
+
+    /* --- 2. 代码块优化 (核心部分) --- */
+    pre, code {
+        /* 代码使用等宽字体 */
+        font-family: "JetBrains Mono", "Fira Code", "Consolas", "Courier New", monospace;
+    }
+
+    /* 代码块容器 */
+    pre {
+        background-color: #f5f5f5 !important; /* 浅灰背景 */
+        border: 1px solid #e0e0e0; /* 细边框 */
+        border-radius: 4px;
+        padding: 10px;
+        white-space: pre-wrap; /* 强制长代码换行，防止超出纸张 */
+        word-wrap: break-word;
+        page-break-inside: avoid; /* 尽量不要把代码块切分到两页 */
+    }
+
+    /* 行内代码 */
+    :not(pre) > code {
+        background-color: #f0f0f0 !important;
+        padding: 2px 4px;
+        border-radius: 3px;
+        color: #c7254e; /* 经典的红色代码文字，或者改成 #333 更加朴素 */
+    }
+
+    /* --- 3. 链接样式 --- */
+    a {
+        text-decoration: none;
+        color: #000; /* 打印时链接显示为黑色 */
+    }
+    
+    /* 可选：在链接后显示 URL，适合纸质阅读，但在电子版 PDF 中可能显得杂乱
+       如果你希望显示 URL，取消下面注释 */
+    /*
+    a[href^="http"]:after {
+        content: " (" attr(href) ")";
+        font-size: 0.8em;
+        color: #666;
+    }
+    */
+
+    /* --- 4. 引用块 (Blockquote) --- */
+    blockquote {
+        border-left: 4px solid #ccc;
+        margin-left: 0;
+        padding-left: 15px;
+        color: #555;
+        font-style: italic;
+        background: transparent;
+    }
+
+    /* --- 5. 表格样式 --- */
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+        font-size: 10pt;
+    }
+    
+    th, td {
+        border: 1px solid #ccc;
+        padding: 8px 12px;
+        text-align: left;
+    }
+    
+    th {
+        background-color: #f0f0f0 !important; /* 表头灰色背景 */
+        font-weight: bold;
+    }
+
+    /* --- 6. 隐藏网页元素 (清理界面) --- */
+    .sidebar, 
+    .search-icon, 
+    .theme-popup, 
+    .menu-bar, 
+    .nav-chapters,
+    .s-top, .s-bottom { /* 隐藏 mdbook 自带的导航按钮 */
+        display: none !important;
+    }
+
+    .page-wrapper {
+        margin: 0 !important;
+        padding: 0 !important;
+        max-width: 100% !important;
+    }
+
+    .content {
+        margin: 0 !important;
+        padding: 0 !important;
+        max-width: 100% !important;
+    }
+    
+    /* --- 7. Admonish 提示框 (如果你用了这个插件) --- */
+    /* 将提示框改为朴素的黑白灰风格，适合打印 */
+    .admonition {
+        box-shadow: none !important;
+        border: 1px solid #333 !important;
+        background-color: #fff !important;
+    }
+    .admonition-title {
+        background-color: #eee !important;
+        border-bottom: 1px solid #333 !important;
+        color: #000 !important;
+    }
+}
