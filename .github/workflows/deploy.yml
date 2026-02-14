@@ -1,0 +1,62 @@
+name: Deploy mdBook to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  # 或者是 master，根据你的默认分支名
+    # 可选：当 src/SUMMARY.md 或 src 目录下的文件变化时触发
+    paths:
+      - 'src/**'
+      - 'book.toml'
+      - '.github/workflows/deploy.yml'
+
+# 设置权限
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# 允许只有一个并发部署
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup mdBook
+        uses: peaceiris/actions-mdbook@v1
+        with:
+          mdbook-version: 'latest'
+          # 如果使用了插件，可以在这里安装
+          # mdbook-version: '0.4.40'
+
+      - name: Install mdBook plugins (可选)
+        run: |
+          # 如果你使用了 mermaid 插件
+          cargo install mdbook-mermaid
+          # 如果你使用了其他插件，继续添加
+          # cargo install mdbook-admonish
+
+      - name: Build book
+        run: mdbook build
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./book
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
