@@ -12,6 +12,7 @@ additional-css = ["theme/pdf-report.css"] # 额外的 CSS 文件
 default-theme = "light" # 默认主题
 preferred-dark-theme = "navy" # 默认深色主题
 mathjax-support = true # 支持数学公式
+additional-js = ["mermaid.min.js", "mermaid-init.js"]
 # 启用搜索功能
 [output.html.search]
 enable = true
