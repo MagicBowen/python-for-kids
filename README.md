@@ -1,4 +1,4 @@
-# 🐍 Python for Kids
+# 🧑🏼‍💻 Python for Kids
 
 <div align="center">
 
