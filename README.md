@@ -158,24 +158,24 @@
 
 | 章节 | 标题 | 内容简介 |
 |------|------|----------|
-| [第1章](src/01-introduce.md) | 安装环境 | 搭建 Python 开发环境 |
-| [第2章](src/02-input-and-output.md) | 输入与输出 | 学会与计算机对话 |
-| [第3章](src/03-str-variable.md) | 字符串变量 | 处理文字信息 |
-| [第4章](src/04-number-variable.md) | 数值变量 | 数学计算 |
-| [第5章](src/05-bool-variable.md) | 布尔变量 | 真与假的判断 |
-| [第6章](src/06-Sequential-statement.md) | 顺序语句 | 程序的执行流程 |
-| [第7章](src/07-condition-statement.md) | 条件语句 | 让程序做决定 |
-| [第8章](src/08-loop-statement.md) | 循环语句 | 重复执行的技巧 |
-| [第9章](src/09-flow-chart.md) | 流程图 | 用图形理解程序 |
-| [第10章](src/10-list.md) | 列表 | 管理多个数据 |
-| [第11章](src/11-dict.md) | 字典 | 键值对组织信息 |
-| [第12章](src/12-function.md) | 函数 | 代码复用 |
-| [第13章](src/13-library.md) | 库 | 使用现成的工具 |
-| [第14章](src/14-command-line.md) | 命令行程序 | 制作实用工具 |
-| [第15章](src/15-chart.md) | 报表程序 | 数据可视化 |
-| [第16章](src/16-UI.md) | 图形程序 | 创建可视化界面 |
-| [第17章](src/17-extension.md) | 程序设计 | 设计大型程序 |
-| [第18章](src/18-computer-architecture.md) | 计算机体系结构 | 理解硬件基础 |
+| [第1章](src/01-introduce.md) | 安装环境 | 准备编程工具箱,了解计算机如何工作 |
+| [第2章](src/02-input-and-output.md) | 输入与输出 | 让程序与你对话,用变量记住信息 |
+| [第3章](src/03-str-variable.md) | 字符串变量 | 处理文字信息,学习内存与索引 |
+| [第4章](src/04-number-variable.md) | 数值变量 | 掌握不同类型的数字,让程序进行数学计算 |
+| [第5章](src/05-bool-variable.md) | 布尔变量 | 学会真与假的判断,控制程序流程 |
+| [第6章](src/06-Sequential-statement.md) | 顺序语句 | 理解程序执行顺序,用Turtle画图 |
+| [第7章](src/07-condition-statement.md) | 条件语句 | 让程序做决定,解决分支问题 |
+| [第8章](src/08-loop-statement.md) | 循环语句 | 用循环简化代码,提升效率 |
+| [第9章](src/09-flow-chart.md) | 流程图 | 用图形画出程序逻辑,理解算法 |
+| [第10章](src/10-list.md) | 列表 | 管理有序数据,学习内存存储原理 |
+| [第11章](src/11-dict.md) | 字典 | 用键值对组织信息,像查字典一样快 |
+| [第12章](src/12-function.md) | 函数 | 打包重复代码,像搭积木一样复用 |
+| [第13章](src/13-library.md) | 库 | 使用现成的工具箱,站在巨人的肩膀上 |
+| [第14章](src/14-command-line.md) | 命令行程序 | 制作实用工具,处理复杂任务 |
+| [第15章](src/15-chart.md) | 报表程序 | 把数据变图表,让数字说话 |
+| [第16章](src/16-UI.md) | 图形程序 | 创建可视化界面,提升用户体验 |
+| [第17章](src/17-extension.md) | 程序设计 | 写出好程序,培养工程师思维 |
+| [第18章](src/18-computer-architecture.md) | 计算机体系结构 | 理解硬件如何协作,连接软件世界 |
 
 ---
 
