@@ -1,8 +1,8 @@
-# 🐍 Python 少儿编程教程
+# 🐍 Python for Kids
 
 <div align="center">
 
-**一本专门为小学高年级孩子（10-12岁）编写的 Python 入门教程**
+**一本专门为小学高年级孩子（3年级以上学生）及其家长编写的 Python 入门教程**
 
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue)](https://www.python.org/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
@@ -183,7 +183,7 @@
 
 ### 🌐 在线阅读（推荐）
 
-点击访问：**[Python 少儿编程教程 - 在线版](https://magicbowen.github.io/python-for-kids/)**
+点击访问：**[Python for Kids - 在线版](https://magicbowen.github.io/python-for-kids/)**
 
 使用 [mdBook](https://rust-lang.github.io/mdBook/) 生成的精美网页版，支持：
 - ✅ 响应式设计，支持手机、平板、电脑阅读
